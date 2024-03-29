@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>PetConnect mobile application===========</h1>
+        <h1>PetConnect mobile application</h1>
         <p>
             PetConnect is a comprehensive mobile application designed to cater to all your pet care needs and facilitate the adoption process for pets in need of loving homes. Whether you're a seasoned pet owner or considering adopting your first furry friend, this app provides a user-friendly platform to ensure the well-being of your beloved pets and streamline the adoption process.
         </p>
