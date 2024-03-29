@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="465dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboard"
+    tools:context=".onboard_screen">
+
+    <FrameLayout
+        android:id="@+id/background_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark"></FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="263dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="373dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/WELCO"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="16dp"
+        android:text="&quot;Discover the joy of pet care and adoption with our app. Whether you're looking for a new companion or seeking resources to care for your current pet, our platform offers everything you need to make informed decisions and provide the best care for your furry friend, all from the convenience of your mobile device.&quot;"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/onb2"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#3FC060"
+        android:text="@string/GET"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

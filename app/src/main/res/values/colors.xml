@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coloraccent">#3FC060</color>
+    <color name="background">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightWhite">#E7B9B6</color>
+    <color name="banner_background_light">#1F0503</color>
+    <color name="home_background">#C5C5C5</color>
+    <color name="colorAccent">#000000</color>
+    <color name="dog_view">#EAEAEA</color>
+    <color name="border_color">#3FC060</color>
+    <color name="dark">#68000000</color>
+    <color name="dark2">#8F7AF098</color>
+    <color name="loginbackground2">#4F000000</color>
+    <color name="radius">#3FC060</color>
+
+
+</resources>

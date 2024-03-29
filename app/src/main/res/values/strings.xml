@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pet Care and Adoption</string>
+    <string name="logo_name">PetConnect</string>
+    <string name="search_text">search..</string>
+    <string name="most_viewed_locations">Best for You</string>
+    <string name="view_all">see more</string>
+    <string name="navbar1">HOME</string>
+    <string name="nevbar1">Home</string>
+    <string name="nevbar2">Pet Care</string>
+    <string name="nevbar3">category</string>
+    <string name="nevbar4">category</string>
+    <string name="category1">Dog</string>
+    <string name="category2">CAT</string>
+    <string name="category3">BIRDS</string>
+    <string name="category4">FISH</string>
+    <string name="category5">RABBIT</string>
+    <string name="category6">HAMSTER</string>
+    <string name="category7">REPTAILS</string>
+    <string name="DOGNAME">Labrador</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="USERNAME">USERNAME</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="WELCOME">HEY,WELCOME\n</string>
+    <string name="WELCO">Welcome to            PetConnect</string>
+    <string name="GET">Get Start</string>
+    <string name="DOC1">Dr Nuwan Laknath</string>
+    <string name="DOC2">Dr Sagara Nelum Kumara</string>
+</resources>
+
+

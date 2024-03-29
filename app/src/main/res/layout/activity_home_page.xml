@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page"
+    android:orientation="vertical"
+    android:background="@color/background"
+	>
+
+
+
+
+	<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent">
+
+		<TextView
+
+			android:id="@+id/app_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:fontFamily="sans-serif-black"
+			android:text="@string/logo_name"
+			android:textColor="@color/coloraccent"
+			android:layout_marginTop="10dp"
+			android:textSize="28sp"
+			android:textStyle="bold" />
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:layout_below="@id/app_name"
+					android:layout_marginLeft="40dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginRight="40dp"
+					android:layout_marginBottom="20dp"
+					android:background="@color/white"
+					android:elevation="8dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="15dp"
+						android:text="@string/search_text" />
+
+					<ImageView
+						android:layout_width="30dp"
+						android:layout_height="30dp"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="15dp"
+						android:src="@drawable/search_icon" />
+
+				</RelativeLayout>
+
+
+			</RelativeLayout>
+	<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@color/white"
+	android:gravity="center"
+	android:padding="1dp"
+
+	>
+
+	<LinearLayout
+		android:id="@+id/home2"
+		android:layout_width="70dp"
+		android:layout_height="46dp"
+		android:layout_margin="1dp"
+		android:background="@color/coloraccent"
+		android:orientation="vertical"
+		android:elevation="8dp"
+		android:padding="1dp">
+
+		<Button
+			android:id="@+id/home"
+			android:layout_width="120dp"
+			android:layout_height="37dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+
+			android:text="Home"
+			android:backgroundTint="@color/coloraccent"
+			android:textAllCaps="true"
+			android:textColor="@color/colorAccent"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/petcare1"
+		android:layout_width="90dp"
+		android:layout_height="match_parent"
+		android:layout_margin="2dp"
+		android:background="@color/coloraccent"
+		android:orientation="vertical"
+
+		android:elevation="8dp"
+		android:padding="1dp">
+
+		<Button
+			android:id="@+id/petcare"
+			android:layout_width="120dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:backgroundTint="@color/coloraccent"
+			android:text="petcare"
+			android:textAllCaps="true"
+			android:textColor="@color/colorAccent"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+
+
+
+
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/category1"
+		android:layout_width="100dp"
+		android:layout_height="match_parent"
+		android:layout_margin="2dp"
+		android:background="@color/coloraccent"
+		android:orientation="vertical"
+
+		android:elevation="8dp"
+		android:padding="1dp">
+
+		<Button
+			android:id="@+id/category"
+			android:layout_width="130dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:text="category"
+			android:backgroundTint="@color/coloraccent"
+			android:textAllCaps="true"
+			android:textColor="@color/colorAccent"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+
+
+
+
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/profile1"
+		android:layout_width="80dp"
+		android:layout_height="match_parent"
+		android:layout_margin="2dp"
+		android:background="@color/coloraccent"
+		android:orientation="vertical"
+
+		android:elevation="8dp"
+		android:padding="1dp">
+
+		<Button
+			android:id="@+id/profile"
+			android:layout_width="136dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:backgroundTint="@color/coloraccent"
+			android:text="profile"
+			android:textAllCaps="true"
+			android:textColor="@color/colorAccent"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+
+
+
+
+
+	</LinearLayout>
+</LinearLayout>
+	<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:layout_width="50dp"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="@drawable/layout_border"
+				android:padding="4dp"
+				>
+
+				<LinearLayout
+					android:id="@+id/background_gradient"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/categories_title"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Dog"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/category2"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/category3"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="cat"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/category4"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/text4"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Birds"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/category5"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/text5"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="rabbits"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/category6"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/text6"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Fish"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/category7"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/text7"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="hamsters"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/category8"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="15dp"
+					android:background="@color/dog_view"
+
+					android:elevation="8dp"
+					android:padding="5dp">
+
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/text8"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="horses"
+							android:textAllCaps="true"
+							android:textColor="@color/colorAccent"
+							android:textSize="15sp" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+			</HorizontalScrollView>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="513dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="395dp">
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<HorizontalScrollView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginTop="10dp"
+							android:orientation="horizontal"
+
+							>
+
+							<LinearLayout
+								android:id="@+id/backgroun_gradient"
+								android:layout_width="250dp"
+								android:layout_height="150dp"
+								android:layout_margin="15dp"
+								android:background="@color/dog_view"
+
+								android:elevation="8dp"
+								android:padding="15dp">
+
+
+								<ImageView
+									android:id="@+id/cateories_image"
+									android:layout_width="110dp"
+									android:layout_height="110dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:src="@drawable/dog1" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/cateories_title"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="@string/DOGNAME"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/categries_dis"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Dog Name: BaileyBreed: Labrador Retriever MixAge: 2 years oldGender: Female (Spayed)"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:id="@+id/backgound_g"
+								android:layout_width="250dp"
+								android:layout_height="150dp"
+								android:layout_margin="15dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="15dp">
+
+
+								<ImageView
+									android:id="@+id/categries_im"
+									android:layout_width="110dp"
+									android:layout_height="110dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:src="@drawable/dog3" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/cagories_ti"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/cries_"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Dog Name: BaileyBreed: Labrador Retriever MixAge: 2 years oldGender: Female (Spayed)"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:id="@+id/backgrod_gradit"
+								android:layout_width="250dp"
+								android:layout_height="150dp"
+								android:layout_margin="15dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="15dp">
+
+
+								<ImageView
+									android:id="@+id/categors_iage"
+									android:layout_width="110dp"
+									android:layout_height="110dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:src="@drawable/dog4" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/categors_tile"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/categies_is"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Dog Name: BaileyBreed: Labrador Retriever MixAge: 2 years oldGender: Female (Spayed)"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+
+						</LinearLayout>
+					</HorizontalScrollView>
+
+					<HorizontalScrollView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_marginTop="10dp"
+							android:orientation="horizontal"
+
+							>
+
+							<LinearLayout
+								android:id="@+id/backgroun_gradit"
+								android:layout_width="250dp"
+								android:layout_height="150dp"
+								android:layout_margin="15dp"
+								android:background="@color/dog_view"
+
+								android:elevation="8dp"
+								android:padding="15dp">
+
+
+								<ImageView
+									android:id="@+id/cateories_ige"
+									android:layout_width="110dp"
+									android:layout_height="110dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:src="@drawable/dog2" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/cateors_title"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/dd"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Dog Name: BaileyBreed: Labrador Retriever MixAge: 2 years oldGender: Female (Spayed)"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:id="@+id/backgnd_g"
+								android:layout_width="250dp"
+								android:layout_height="150dp"
+								android:layout_margin="15dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="15dp">
+
+
+								<ImageView
+									android:id="@+id/catries_im"
+									android:layout_width="110dp"
+									android:layout_height="110dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:src="@drawable/dog5" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/gories_ti"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/ies_"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Dog Name: BaileyBreed: Labrador Retriever MixAge: 2 years oldGender: Female (Spayed)"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:id="@+id/backod_gradit"
+								android:layout_width="250dp"
+								android:layout_height="150dp"
+								android:layout_margin="15dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="15dp">
+
+
+								<ImageView
+									android:id="@+id/categoriage"
+									android:layout_width="110dp"
+									android:layout_height="110dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:src="@drawable/dog6" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/caters_tile"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/categs_is"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Dog Name: BaileyBreed: Labrador Retriever MixAge: 2 years oldGender: Female (Spayed)"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+
+						</LinearLayout>
+					</HorizontalScrollView>
+
+				</LinearLayout>
+
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent">
+
+
+				<ScrollView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+
+					>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="10sp"
+							android:background="@drawable/layout_border"
+							android:orientation="vertical">
+
+
+							<LinearLayout
+								android:id="@+id/backgrond_gradient"
+								android:layout_width="match_parent"
+								android:layout_height="80dp"
+								android:layout_margin="1dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="12dp">
+
+
+								<ImageView
+									android:id="@+id/ategories_image"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:layout_margin="1dp"
+									android:src="@drawable/dog7" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/catgories_title"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/cegories_dis"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Age: 2 years"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="10sp"
+							android:background="@drawable/layout_border"
+							android:orientation="vertical">
+
+
+							<LinearLayout
+								android:id="@+id/backgrod_gradient"
+								android:layout_width="360dp"
+								android:layout_height="80dp"
+								android:layout_margin="1dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="12dp">
+
+
+								<ImageView
+									android:id="@+id/ategoies_image"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:layout_margin="1dp"
+									android:src="@drawable/dog8" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/caories_title"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/cegies_dis"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Age: 2 years"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="10sp"
+							android:background="@drawable/layout_border"
+							android:orientation="vertical">
+
+
+							<LinearLayout
+								android:id="@+id/backgd_gradient"
+								android:layout_width="360dp"
+								android:layout_height="80dp"
+								android:layout_margin="1dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="12dp">
+
+
+								<ImageView
+									android:id="@+id/ateies_image"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:layout_margin="1dp"
+									android:src="@drawable/dog2" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/caors_title"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/cegs_dis"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Age: 2 years"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="10sp"
+							android:background="@drawable/layout_border"
+							android:orientation="vertical">
+
+
+							<LinearLayout
+								android:id="@+id/bkgd_gradient"
+								android:layout_width="360dp"
+								android:layout_height="80dp"
+								android:layout_margin="1dp"
+								android:background="@color/dog_view"
+								android:elevation="8dp"
+								android:padding="12dp">
+
+
+								<ImageView
+									android:id="@+id/ates_image"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_alignParentRight="true"
+									android:layout_alignParentBottom="true"
+									android:layout_margin="1dp"
+									android:src="@drawable/dog3" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+									<TextView
+										android:id="@+id/crs_title"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:text="Labrador"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="15sp" />
+
+									<TextView
+										android:id="@+id/cgs_dis"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="10dp"
+										android:text="Age: 2 years"
+										android:textAllCaps="true"
+										android:textColor="@color/colorAccent"
+										android:textSize="9sp" />
+								</LinearLayout>
+
+							</LinearLayout>
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</ScrollView>
+
+
+			</RelativeLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>
+	</LinearLayout>
+
+
+</LinearLayout>
+
+

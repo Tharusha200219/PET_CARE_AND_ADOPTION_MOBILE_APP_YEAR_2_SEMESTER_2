@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="1dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/home2"
+            android:layout_width="70dp"
+            android:layout_height="46dp"
+            android:layout_margin="1dp"
+            android:background="@color/coloraccent"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="120dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="Home"
+                android:backgroundTint="@color/coloraccent"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/petcare1"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/coloraccent"
+            android:orientation="vertical"
+
+            android:elevation="8dp"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/petcare"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:backgroundTint="@color/coloraccent"
+                android:text="petcare"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/category1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/coloraccent"
+            android:orientation="vertical"
+
+            android:elevation="8dp"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/category"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="category"
+                android:backgroundTint="@color/coloraccent"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/coloraccent"
+            android:orientation="vertical"
+
+            android:elevation="8dp"
+            android:padding="1dp">
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:backgroundTint="@color/coloraccent"
+                android:text="profile"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/profile_image_background"
+                android:src="@drawable/profile" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="Tharusha Rashmika"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="rashmikatharusha8@gmail.com"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="09/01/2002"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="Sri lanka"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="10dp"
+                android:text="colombo"
+                android:textColor="@color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="logout"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/radius"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+
+</RelativeLayout>
