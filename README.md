@@ -13,6 +13,7 @@
         <p>
             PetConnect is a comprehensive mobile application designed to cater to all your pet care needs and facilitate the adoption process for pets in need of loving homes. Whether you're a seasoned pet owner or considering adopting your first furry friend, this app provides a user-friendly platform to ensure the well-being of your beloved pets and streamline the adoption process.
         </p>
+<img src="https://github.com/Tharusha200219/PET_CARE_AND_ADOPTION_MOBILE_APP_YEAR_2_SEMESTER_2/blob/main/Desktop%20-%202.jpg?raw=true" alt="pet" style="width: 200px">
     </div>
 </body>
 </html>
